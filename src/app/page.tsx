@@ -60,7 +60,7 @@ export default function Home() {
                 hidden: { opacity: 0, y: 50 },
               }}
               transition={{ duration: 0.6 }}
-              className="col-span-3 p-4 rounded-2xl border"
+              className="col-span-3 p-4 border-4 gradient-border" style={{ borderRadius: '1rem' }}
             >
               <h1 className="text-center text-7xl p-5 text-white">About me</h1>
               <h1 className="text-2xl text-white">
@@ -83,9 +83,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="col-span-1 pt-6 rounded-2xl"
             >
-               <div className="text-5xl"> <LinkedInIcon/> </div>
-              <img className="rounded-full" src="/assets/mypic.jpeg" alt="Example" width={500} height={500} />
-        
+              <img className="rounded-full " src="/assets/mypic.jpeg" alt="Example" width={500} height={500} />
             </motion.div>
             
           </div>
@@ -103,8 +101,8 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="col-span-2 text-center text-7xl">
                 <h1 className="text-center text-7xl p-5 text-white">Projects</h1>
-          <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left p-4  rounded-2xl border">
-              
+                <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left p-4 gradient-border border-4">
+
             <a
               href="https://github.com/obeyyyy/lunar-lander"
               className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:font-semibold hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -190,7 +188,7 @@ export default function Home() {
               className="grid grid-cols-2 gap-4"
             >
 
-          <div className="col-span-1 border rounded-lg p-5">
+          <div className="col-span-1 gradient-border border-4 rounded-lg p-5">
             
             <h1 className="text-center text-white text-7xl p-3">Tech Stack</h1>
             <div className="grid grid-cols-2 gap-4 whitespace-pre">
@@ -256,12 +254,12 @@ export default function Home() {
           </div>
         </div>
      
-        <div className="col-span-1 p-5 border rounded-full w-64 h-64 flex flex-col justify-center items-center mx-auto">
-        <h1 className="text-center text-7xl p-5 text-white">CV</h1>
+        <div className="col-span-1 p-5 w-64 h-64 flex flex-col justify-center items-center mx-auto"  style={{ borderRadius: '50%', backgroundImage: 'linear-gradient(to right, #800080, #ff1493)' }}>
+        <h1 className="text-center text-7xl p-5 text-black">CV</h1>
         <a
           href="/assets/Oubaye's-CV-vercel.pdf" // Replace with the actual path to your CV file
           download
-          className="text-center text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
+          className="text-center text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:text-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
         >
           <MarkdownIcon size="2px"/>
         </a>

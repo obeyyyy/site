@@ -27,6 +27,10 @@ body {
   }
 }
 
+.gradient-border {
+  border-image: linear-gradient(to right, #8B5CF6, #FF7A78);
+  border-image-slice: 1;
+}
 
 
 /* styles/AnimatedBackground.module.css */
