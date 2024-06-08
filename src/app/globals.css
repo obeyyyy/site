@@ -18,12 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: black;
 }
 
 @layer utilities {
@@ -31,3 +26,91 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+/* styles/AnimatedBackground.module.css */
+@keyframes move {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.animated-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.circle {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.6;
+  animation: move 4s ease-in-out infinite;
+}
+
+.circle:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  top: 10%;
+  left: 5%;
+}
+
+.circle:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  background-color: #00f;
+  top: 50%;
+  left: 20%;
+}
+
+.circle:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  background-color: #0f0;
+  top: 20%;
+  left: 80%;
+}
+
+.circle:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  top: 10%;
+  left: 50%;
+}
+.circle:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  top: 90%;
+  left: 10%;
+}
+.circle:nth-child(6) {
+  width: 50px;
+  height: 50px;
+  background-color: royalblue;
+  top: 10%;
+  left: 20%;
+}
+.circle:nth-child(7) {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+  top: 50%;
+  left: 60%;
+}
+
+
