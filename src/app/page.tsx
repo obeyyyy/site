@@ -259,7 +259,7 @@ export default function Home() {
         <div className="col-span-1 p-5 border rounded-full w-64 h-64 flex flex-col justify-center items-center mx-auto">
         <h1 className="text-center text-7xl p-5 text-white">CV</h1>
         <a
-          href="/path/to/your/CV.pdf" // Replace with the actual path to your CV file
+          href="/assets/Oubaye's-CV-vercel.pdf" // Replace with the actual path to your CV file
           download
           className="text-center text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
         >
