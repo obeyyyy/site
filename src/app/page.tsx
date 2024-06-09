@@ -8,7 +8,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 import './/fonts'; // Import the Font Awesome library configuration
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { JavaIcon, ReactIcon, PythonIcon, Html5Icon, Css3Icon, NodeJsIcon, MarkdownIcon, LinkedInIcon, ArrowIcon } from ".//fonts";
+import { JavaIcon, ReactIcon, PythonIcon, Html5Icon, Css3Icon, NodeJsIcon, MarkdownIcon, LinkedInIcon, CIcon } from ".//fonts";
 import dynamic from "next/dynamic";
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -191,30 +191,35 @@ export default function Home() {
               className="grid grid-cols-2 gap-4"
             >
 
-          <div className="col-span-1 gradient-border border-4 rounded-lg p-5">
+          <div className="col-span-1 gradient-border border-4 rounded-lg p-5 text-white">
             
             <h1 className="text-center text-white text-7xl p-3">Tech Stack</h1>
-            <div className="grid grid-cols-2 gap-4 whitespace-pre">
-              <div className="w-24 h-24 flex justify-center items-center hover:animate-spin text-red-500">
-                <JavaIcon  size="4x"/> 3 years
+            <div className="grid grid-cols-2 gap-2 pl-16 whitespace-pre ">
+              <div className="w-24 h-24 flex justify-center items-center text-red-500">
+              <div className=" spin-slow"><JavaIcon  size="4x"/> </div>   3 years<div></div>
               </div>
               <div className="w-24 h-24 flex justify-center items-center text-blue-500">
-                <ReactIcon size="4x" /> 1 year
+              <div className=" spin-slow"><ReactIcon size="4x" /></div><div> 1 year</div>
               </div>
               <div className="w-24 h-24 flex justify-center items-center text-orange-800">
-                <Html5Icon size="4x" /> 3 years
+              <div className=" spin-slow"><Html5Icon size="4x" /></div><div>   3 years</div>
               </div>
               <div className="w-24 h-24 flex justify-center items-center text-blue-800">
-                <PythonIcon size="4x" /> 2 years
+              <div className=" spin-slow"><PythonIcon size="4x" /></div><div>   2 years</div>
               </div>
               <div className="w-24 h-24 flex justify-center items-center text-cyan-500">
-                <Css3Icon size="4x" /> 3 years
+              <div className=" spin-slow"><Css3Icon size="4x" /></div><div>   3 years</div> 
               </div>
               <div className="w-24 h-24 flex justify-center items-center text-green-500">
-                <NodeJsIcon size="4x" /> 1 year
+                <div className=" spin-slow"><NodeJsIcon size="4x" /></div><div>   1 year</div> 
               </div>
-              <div className="w-24 h-24 flex justify-center items-center font-bold text-white">
-                 Next.js    1 year
+              <div className="flex justify-left items-center font-bold rounded-full text-white p-1">
+              <img className="rounded-full border bg-white spin-slow " src="/assets/next-js.svg" alt="Example" width={60} height={60} />
+                     <p>   1 year</p>  
+                    </div>
+
+              <div className="w-24 h-24 flex justify-center items-center text-blue-300">
+              <div className=" spin-slow"><CIcon size="4x" /></div><div>   3 years</div> 
               </div>
             </div>
           </div>
