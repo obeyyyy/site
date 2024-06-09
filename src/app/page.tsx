@@ -3,11 +3,12 @@ import Image from "next/image";
 import { Container } from "postcss";
 import ".//globals.css";
 import AnimatedBackground from "./AnimatedBackground";
+import Section07 from "./arrow"; 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 import './/fonts'; // Import the Font Awesome library configuration
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { JavaIcon, ReactIcon, PythonIcon, Html5Icon, Css3Icon, NodeJsIcon, MarkdownIcon, LinkedInIcon } from ".//fonts";
+import { JavaIcon, ReactIcon, PythonIcon, Html5Icon, Css3Icon, NodeJsIcon, MarkdownIcon, LinkedInIcon, ArrowIcon } from ".//fonts";
 import dynamic from "next/dynamic";
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -62,7 +63,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="col-span-3 p-4 border-4 gradient-border" style={{ borderRadius: '1rem' }}
             >
-              <h1 className="text-center text-7xl p-5 text-white">About me</h1>
+              <h1 className="text-center text-7xl p-5 text-white ">About me</h1>
               <h1 className="text-2xl text-white">
                 Hello,<br /> My name is Oubaye and I am a computer science graduate
               </h1>
@@ -85,11 +86,13 @@ export default function Home() {
             >
               <img className="rounded-full " src="/assets/mypic.jpeg" alt="Example" width={500} height={500} />
             </motion.div>
-            
-          </div>
+           
+          </div>   
+          <div className="mt-14 h-5"><Section07/></div>
+          
         </section>
         <AnimatedBackground />
-       
+    
         <section id="projects" className="row p-20" ref={refProjects}>
         <motion.h1
               initial={'hidden'}
