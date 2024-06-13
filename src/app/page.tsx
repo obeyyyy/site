@@ -235,7 +235,7 @@ export default function Home() {
               <div className="grid grid-rows-4 gap-4 whitespace-pre font-bold">
                 <br/>
                 <div>Full stack Developer at Jordi Hans design (based in sweden) 2023 - ongoing:</div>
-                <div>Involved in developing a variety of mobile apps and websites using technologies such as react.js, wordpress and firebase database.</div>
+                <div>Involved in developing a variety of mobile apps and websites using technologies<br></br> such as react.js, wordpress and firebase database.</div>
               </div>
             </div>
 
