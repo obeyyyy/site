@@ -215,7 +215,7 @@ export default function Home() {
               </div>
               <div className="flex justify-left items-center font-bold rounded-full text-white p-1">
               <img className="rounded-full border bg-white spin-slow " src="/assets/next-js.svg" alt="Example" width={60} height={60} />
-                     <p>   1 year</p>  
+                     <p>   2 years</p>  
                     </div>
 
               <div className="w-24 h-24 flex justify-center items-center text-blue-300">
@@ -265,7 +265,7 @@ export default function Home() {
         <div className="col-span-1 p-5 w-64 h-64 flex flex-col justify-center items-center mx-auto"  style={{ borderRadius: '50%', backgroundImage: 'linear-gradient(to right, #800080, #ff1493)' }}>
         <h1 className="text-center text-7xl p-5 text-black">CV</h1>
         <a
-          href="/assets/Oubaye-ElghammatCV.pdf" // Replace with the actual path to your CV file
+          href="/assets/OubayeCV.pdf" // Replace with the actual path to your CV file
           download
           className="text-center text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:text-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
         >
