@@ -107,7 +107,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="col-span-2 text-center text-4xl md:text-7xl p-5 text-white"
           >
-            Projects
+           <h1 className="p-2"> Projects </h1>
             <div className="mb-16 md:mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left p-4 gradient-border border-4">
               <a
                 href="https://github.com/obeyyyy/lunar-lander"
@@ -219,9 +219,9 @@ export default function Home() {
                   <div className="spin-slow"><NodeJsIcon size="4x"/></div>
                   <div>1 year</div> 
                 </div>
-                <div className="flex justify-left items-center font-bold rounded-full text-white p-1">
+                <div className="flex flex-col items-left font-bold rounded-full text-white p-1">
                   <img className="rounded-full border bg-white spin-slow" src="/assets/next-js.svg" alt="Example" width={60} height={60}/>
-                  <p>2 years</p>  
+                  <div>2 years</div>  
                 </div>
                 <div className="w-24 h-24 flex flex-col justify-center items-center text-blue-300">
                   <div className="spin-slow"><CIcon size="4x"/></div>
@@ -229,15 +229,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-5">
-              <h1 className="text-center text-4xl md:text-7xl p-5">Experience</h1>
-              <div className="grid grid-rows-4 gap-4 whitespace-pre font-bold">
-                <br/>
-                <div>Full stack Developer at Jordi Hans design (based in sweden) 2023 - ongoing:</div>
-                <div>Involved in developing a variety of mobile apps and websites using technologies<br></br> such as react.js, wordpress and firebase database.</div>
-              </div>
+            <h1 className="text-center text-4xl md:text-7xl p-5">Experience</h1>
+            <div className="flex flex-col gap-4 ">
+              <div>
+                Full stack Developer at Jordi Hans design (based in Sweden) 2023 - ongoing: <br></br>
+               <br></br>
+                Involved in developing a variety of mobile apps and websites using technologies 
+                such as React.js, WordPress, and Firebase database, focusing on creating
+                user-friendly interfaces, ensuring responsive design, and implementing efficient
+                backend functionalities.<br></br> <br></br> This experience includes collaborating with
+                cross-functional teams, conducting thorough testing, and continuously improving performance 
+                and security to deliver high-quality digital solutions.
+              </div> 
             </div>
+          </div>
+
 
             <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-5">
               <h1 className="text-center text-4xl md:text-7xl p-5">Languages</h1>
@@ -264,7 +271,7 @@ export default function Home() {
             <div className="p-5 w-64 h-64 flex flex-col justify-center items-center mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500">
               <h1 className="text-center text-4xl md:text-7xl p-5 text-black">CV</h1>
               <a
-                href="/assets/OubayeCV.pdf"
+                href="/assets/Oubaye's CV6.pdf"
                 download
                 className="text-center text-2xl md:text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:text-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
               >
