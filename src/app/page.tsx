@@ -14,6 +14,8 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Gb, Ma, Es, Fr } from "react-flags-select";
+import Gsaptext from './gsapTexts';
+import GsapFade from './gsapTextsFade';
 
 
 export default function Home() {
@@ -58,7 +60,9 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
         <section id="about" className="row" ref={refAbout}>
           <div className="mb-16 p-1 grid gap-x-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+       
             <motion.div
+           
               initial={'hidden'}
               animate={inViewAbout ? 'visible' : 'hidden'}
               variants={{
@@ -68,17 +72,20 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="col-span-3 p-4 border-4 gradient-border rounded-lg"
             >
-              <h1 className="text-center text-4xl md:text-7xl p-5 text-white">About me</h1>
-              <h1 className="text-xl md:text-2xl text-white">
-                Hello,<br /> My name is Oubaye and I am a computer science graduate
+                 <Gsaptext>
+              <h1 data-animate className="text-center text-4xl md:text-7xl p-5 text-white">About me</h1>
+              <h1 data-animate className="text-xl md:text-2xl text-white">
+                Hello, My name is Oubaye and I am a computer science graduate
               </h1>
-              <br />
-              <p className="text-white">
+              <br></br>
+              <p data-animate className="text-white">
                 As a passionate and driven Computer Science graduate based in Lancaster, United Kingdom, with a Spanish
                 nationality and a flair for technology, I am on a mission to leverage the power of innovation to solve
                 complex challenges and make a positive impact on the world while also learning and improving on the way.
-              </p>
+              </p>  
+              </Gsaptext>
             </motion.div>
+           
             <motion.div
               initial={'hidden'}
               animate={inViewAbout ? 'visible' : 'hidden'}
@@ -89,7 +96,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="col-span-1 pt-6 rounded-2xl"
             >
-              <img className="rounded-full w-full h-auto" src="/assets/mypic.jpeg" alt="Example" />
+              <img className="rounded-full w-full h-auto" src="/assets/portfoliopic.jpeg" alt="Example" />
             </motion.div>
           </div>   
           <div className="mt-14 h-5"><Section07/></div>
@@ -232,7 +239,8 @@ export default function Home() {
             <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-5">
             <h1 className="text-center text-4xl md:text-7xl p-5">Experience</h1>
             <div className="flex flex-col gap-4 ">
-              <div>
+              <GsapFade>
+              <div data-animate1>
                 Full stack Developer at Jordi Hans design (based in Sweden) 2023 - ongoing: <br></br>
                <br></br>
                 Involved in developing a variety of mobile apps and websites using technologies 
@@ -242,6 +250,7 @@ export default function Home() {
                 cross-functional teams, conducting thorough testing, and continuously improving performance 
                 and security to deliver high-quality digital solutions.
               </div> 
+              </GsapFade>
             </div>
           </div>
 
