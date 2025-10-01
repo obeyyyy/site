@@ -118,20 +118,24 @@ export default function Home() {
             <div className="mb-16 md:mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-2 lg:text-left p-4 gradient-border border-4">
               <a
                 href="https://github.com/obeyyyy/lunar-lander"
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:font-semibold hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:font-semibold hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="mb-3 text-xl md:text-2xl text-white font-semibold hover:text-black">
+                <h2 className="mb-3 text-xl md:text-2xl text-white font-semibold">
                   Lunar Lander Game{" "}
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:text-black ">
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none ">
                     -&gt;
                   </span>
                   <img className="size-fit" src={"/assets/lunar_lander.png"}></img>
                 </h2>
-                <p className="text-sm opacity-80 text-white hover:text-black">
+                <p className="text-sm opacity-80 text-white">
                   The famous lunar lander game written in C ncurses library
                 </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">C</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">ncurses</span>
+                  </div>
               </a>
               <a
                 href="https://github.com/obeyyyy/SCC300-TYP/tree/first"
@@ -139,33 +143,53 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white hover:text-black">
+                <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white">
                   Blockchain consensus protocols{" "}
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                     -&gt;
                   </span>
                   <img className="size-fit" src={"/assets/bitcoin.jpg"}></img>
                 </h2>
-                <p className="text-sm opacity-80 text-white hover:text-black">
+                <p className="text-sm opacity-80 text-white">
                   Using jabs (just another blockchain simulator), my research aimed to extend the Java simulator appropriately to decrease the amount of costly cross-shard Ethereum transactions and reach perfect load balance across all shards in the blockchain network.
                 </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Java</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Blockchain</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">PBFT protocols</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Sharding</span>
+                  </div>
               </a>
               <a
-                href="https://github.com/obeyyyy/bank-app-system"
+                href="https://where2travels.vercel.app/"
                 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white hover:text-black">
-                  Simple Bank Java GUI{" "}
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    -&gt;
-                  </span>
-                  <img className="size-fit" src={"/assets/image.png"}></img>
-                </h2>
-                <p className="m-0 max-w-[30ch] text-sm opacity-80 text-white hover:text-black">
-                  A simple banking application built with java GUI, where you can deposit, withdraw, and check your balance.
-                </p>
+                <div className="relative">
+                  <div className="absolute -top-3 -right-3">
+                    <span className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-3 py-1 text-xs font-medium text-white shadow-lg ring-1 ring-black/10">
+                      Coming Soon
+                      <span className="ml-1.5 h-2 w-2 rounded-full bg-white/80"></span>
+                    </span>
+                  </div>
+                  <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white">
+                    Where2 Travels
+                    <span className="ml-2 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                      -&gt;
+                    </span>
+                  </h2>
+                  <img className="w-full h-auto max-h-52 object-contain mb-3 rounded-md" src={"/assets/mock4-left.png"} alt="Travel Booking Platform"></img>
+                  <p className="m-0 text-sm opacity-80 text-white">
+                    Where2 Travels is a travel booking platform that allows users to book flights and hotels with a simple search, bundling the trip and pay for both with one click. Saving users time, multiple tabs and the need to switch between different websites.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Next.js</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Duffel API</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Supabase</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Stripe</span>
+                  </div>
+                </div>
               </a>
               <a
                 href="https://github.com/obeyyyy/NetworkApplication"
@@ -173,16 +197,22 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white hover:text-black">
+                <h2 className="mb-3 text-xl md:text-2xl font-semibold text-white">
                   Traceroute and ParisTraceroute Implementation{" "}
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                     -&gt;
                   </span>
                   <img className="size-fit" src={"/assets/11.png"}></img>
                 </h2>
-                <p className="m-0 max-w-[30ch] text-sm opacity-80 text-white hover:text-black">
+                <p className="m-0 max-w-[30ch] text-sm opacity-80 text-white">
                   Implemented the networking tools such as pinging, traceroute and ParisTraceroute using python.
                 </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Python</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Networking</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">Traceroute</span>
+                    <span className="inline-flex items-center rounded-full bg-blue-100/10 px-2.5 py-0.5 text-xs font-medium text-blue-200">ParisTraceroute</span>
+                  </div>
               </a>
             </div>
           </motion.h1>
@@ -267,10 +297,6 @@ export default function Home() {
                 </div> 
                 <div>Spanish</div>
                 <div>
-                  <Ma className="text-5xl"/> 
-                </div> 
-                <div>Arabic</div>
-                <div>
                   <Fr className="text-5xl"/> 
                 </div> 
                 <div>French</div>
@@ -280,7 +306,7 @@ export default function Home() {
             <div className="p-5 w-64 h-64 flex flex-col justify-center items-center mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500">
               <h1 className="text-center text-4xl md:text-7xl p-5 text-black">CV</h1>
               <a
-                href="/assets/Oubaye's CV6.pdf"
+                href="/assets/Oubaye's_CV_NL.pdf"
                 download
                 className="text-center text-2xl md:text-3xl text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:text-black py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
               >
